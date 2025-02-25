@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Animechan",
+    "description": "Get random anime quote",
+    "url": "https://animechan.io/api/v1/quotes/random",
+    "api-key": null
+  }
+]
