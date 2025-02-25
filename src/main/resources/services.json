@@ -1,8 +1,8 @@
 [
   {
-    "name": "Animechan",
-    "description": "Get random anime quote",
-    "url": "https://animechan.io/api/v1/quotes/random",
+    "name": "Dog Facts",
+    "description": "Random dog fact",
+    "url": "https://dog-api.kinduff.com/api/facts",
     "api-key": null
   }
 ]
