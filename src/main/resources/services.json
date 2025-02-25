@@ -1,8 +1,20 @@
 [
   {
+    "name": "Animechan",
+    "description": "Anime quotes (over 10k+)",
+    "url": "https://animechan.io/api/v1/quotes/random",
+    "api-key": null
+  },
+  {
     "name": "Dog Facts",
-    "description": "Random dog fact",
+    "description": "Random facts of Dogs",
     "url": "https://dog-api.kinduff.com/api/facts",
+    "api-key": null
+  },
+  {
+    "name": "MeowFacts",
+    "description": "Get random cat facts",
+    "url": "https://meowfacts.herokuapp.com/",
     "api-key": null
   }
 ]
