@@ -8,6 +8,7 @@ import org.apache.hc.client5.http.classic.methods.HttpGet;
 import org.apache.hc.client5.http.impl.classic.BasicHttpClientResponseHandler;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClients;
+import org.apache.hc.core5.http.ClassicHttpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,16 +41,15 @@ public class ServiceTask implements Runnable {
                 writer.flush();
             }
         } catch (final Exception e) {
-            LOG.error("Error with service: {}\nError message: {}", service.getName(), e.getMessage());
+            LOG.error("Error with service: {}. {}", service.getName(), e.getMessage());
         }
         LOG.debug("End task for: {}", service.getName());
     }
 
     private JsonNode getResponse() throws IOException {
-        LOG.debug("Getting response");
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
-            String response = httpClient.execute(new HttpGet(service.getUrl()), new BasicHttpClientResponseHandler());
-            LOG.debug("Got response");
+            ClassicHttpRequest request = new HttpGet(service.getUrl());
+            String response = httpClient.execute(request, new BasicHttpClientResponseHandler());
             return new ObjectMapper().readTree(response);
         }
     }

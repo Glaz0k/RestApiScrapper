@@ -1,14 +1,10 @@
 [
   {
     "name": "DogFacts",
-    "description": "Random facts of Dogs",
-    "url": "https://dog-api.kinduff.com/api/facts",
-    "api-key": null
+    "url": "https://dog-api.kinduff.com/api/facts"
   },
   {
     "name": "MeowFacts",
-    "description": "Get random cat facts",
-    "url": "https://meowfacts.herokuapp.com/",
-    "api-key": null
+    "url": "https://meowfacts.herokuapp.com/"
   }
 ]

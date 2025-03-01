@@ -14,13 +14,7 @@ public final class Service {
     @JsonProperty("name")
     public final String name;
 
-    @JsonProperty("description")
-    public final String description;
-
     @JsonProperty("url")
     public final String url;
-
-    @JsonProperty("api-key")
-    public final String apiKey;
 
 }
