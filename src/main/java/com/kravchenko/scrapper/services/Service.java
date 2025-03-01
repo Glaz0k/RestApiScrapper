@@ -12,15 +12,15 @@ import lombok.NoArgsConstructor;
 public final class Service {
 
     @JsonProperty("name")
-    private final String name;
+    public final String name;
 
     @JsonProperty("description")
-    private final String description;
+    public final String description;
 
     @JsonProperty("url")
-    private final String url;
+    public final String url;
 
     @JsonProperty("api-key")
-    private final String apiKey;
+    public final String apiKey;
 
 }
